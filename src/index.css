@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-y: hidden;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+.homeTitleText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: left;
+}
+
+.homeTitleContentText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    margin-top: 28px;
+}
+
+.welcomeText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    /* 800 */
+
+    color: #2D3748;
+}
+
+.loginTitleText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+
+    /* 900 */
+
+    color: #1A202C;
+}
+
+.buttonGreen {
+    background: #04C45C;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 15px;
+    width: 100%;
+}
+
+.buttonDark {
+    background: #2D3748;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.inputLabel {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+
+    color: #4A5568;
+    margin-bottom: 10px;
+}
+
+.inputLabelError {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+
+    color: red;
+    margin-bottom: 10px;
+}
+
+.inputField {
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    /* 800 */
+
+    color: #2D3748;
+    padding: 17px;
+    width: calc(100% - 34px);
+}
+
+.inputLabel2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-align: left;
+}
+
+.inputField2 {
+    padding: 20px;
+    width: calc(100% - 40px);
+    background: #FFFFFF;
+    border-radius: 60px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.errorBorder {
+    border: 1px solid #FF0101;
+}
+
+
+.button2 {
+    background: #3A5C58;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: justify;
+    color: #FFFFFF;
+    padding: 11px;
+    padding-left: 41px;
+    padding-right: 41px;
+}
+
+.button3 {
+    background: #AAFADD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 45px;
+    padding: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    height: max-content;
+}
+
+.slideImage {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+.sliderImage2 {
+  animation-duration: 1s;
+  animation-name: slideinx;
+}
+
+
+@keyframes slidein {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 615px;
+  }
+}
+
+@keyframes slideinx {
+  from {
+    width: 1px;
+  }
+
+  to {
+    width: 615px;
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 54px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 50px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  transform: translateX(50px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
